@@ -1,0 +1,20 @@
+{
+  "name": "aula09sdm2604manharevisao",
+  "version": "1.0.0",
+  "description": "1. Após criar nosso repositório no gitHub....     - Abrir terminal (git bash) em uma pasta         - clonar o repositório nesta pasta local por meio do comando:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmamorim/Aula09SDM2604ManhaRevisao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmamorim/Aula09SDM2604ManhaRevisao/issues"
+  },
+  "homepage": "https://github.com/mmamorim/Aula09SDM2604ManhaRevisao#readme"
+}

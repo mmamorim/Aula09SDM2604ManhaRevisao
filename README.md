@@ -18,7 +18,7 @@
 
     _Ele é responsável por gerenciar diversas coisas do nosso projeto_
 
-    `npm init`
+    `npm init` ou `npm init -y` para ele criar sem perguntar nada
 
 4.1 Não esqueçam de criar um arquivo chamado `.gitignore` dizendo para o git ignorar a pasta `node_modules`. Basta adicionar a linha:
 
