@@ -26,9 +26,23 @@
 
 5. Caso queiram usar o **nodemon**
 
-    _Vimos que toda vez que alteraramos os arquivos de código, precisamos derrubar e subir novamente o servidor...caso queiram...pode-se utilizar o nodemon para monitorar os ajustes e restartar o nosso servidor. Para instalar:_
+    _Vimos que toda vez que alteraramos os arquivos de código, precisamos derrubar e subir novamente o servidor...caso queiram...pode-se utilizar o nodemon para monitorar os ajustes e restartar o nosso servidor. Para instalar global:_
 
-    `npm install -g nodemon@1.19.4`
+    `npm install -g nodemon` 
+    
+    _para instalar como dependencia de desenvolvimento_
+    
+    `npm install nodemon -D`
+
+    dentro do arquivo package.json adicionar os scripts
+
+    ~~~json 
+    "scripts": {
+        "dev": "nodemon main.js",
+        "server": "nodemon server.js"
+    },
+    ~~~    
+
 
 6. Deixando nosso server profissa com um arquivo de **config.json**
 

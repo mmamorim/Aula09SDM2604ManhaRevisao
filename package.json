@@ -4,7 +4,8 @@
   "description": "1. Após criar nosso repositório no gitHub....     - Abrir terminal (git bash) em uma pasta         - clonar o repositório nesta pasta local por meio do comando:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon main.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/mmamorim/Aula09SDM2604ManhaRevisao/issues"
   },
-  "homepage": "https://github.com/mmamorim/Aula09SDM2604ManhaRevisao#readme"
+  "homepage": "https://github.com/mmamorim/Aula09SDM2604ManhaRevisao#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
