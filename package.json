@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "1. Após criar nosso repositório no gitHub....     - Abrir terminal (git bash) em uma pasta         - clonar o repositório nesta pasta local por meio do comando:",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon main.js",
     "server": "nodemon server.js"
@@ -20,5 +21,9 @@
   "homepage": "https://github.com/mmamorim/Aula09SDM2604ManhaRevisao#readme",
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "config": "^3.3.7",
+    "express": "^4.18.0"
   }
 }

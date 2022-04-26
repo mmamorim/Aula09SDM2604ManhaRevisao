@@ -43,6 +43,10 @@
     },
     ~~~    
 
+    Para usar o padrão ES MODULES incluir no package.json
+    ~~~json 
+    "type": "module",
+    ~~~   
 
 6. Deixando nosso server profissa com um arquivo de **config.json**
 
