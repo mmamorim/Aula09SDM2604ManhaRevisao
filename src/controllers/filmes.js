@@ -20,16 +20,42 @@ export default function (app) {
         res.json(filmes)
     });
 
+    app.get(routeName+"/:id", function (req, res) {
+        console.log(req.params);
+        res.json(filmes[req.params.id])
+    });
+
     app.post(routeName, function (req, res) {
-        res.json({ algo: "alguma coisa", msg: "uma menssagem" })
+        console.log(req.body);
+        if(filmes[req.body.id] != undefined) {
+            res.status(401).send("erro")
+        }
+        filmes[req.body.id] = {
+            nome: req.body.nome,
+            ano: req.body.ano
+        }
+        res.json(filmes[req.body.id])
     });
 
     app.put(routeName, function (req, res) {
-        res.json({ algo: "alguma coisa", msg: "uma menssagem" })
+        console.log(req.body);
+        if(filmes[req.body.id] == undefined) {
+            res.status(401).send("erro")
+        }
+        filmes[req.body.id] = {
+            nome: req.body.nome,
+            ano: req.body.ano
+        }
+        res.json(filmes[req.body.id])
     });
 
     app.delete(routeName, function (req, res) {
-        res.json({ algo: "alguma coisa", msg: "uma menssagem" })
+        console.log(req.body);
+        if(filmes[req.body.id] == undefined) {
+            res.status(401).send("erro")
+        }
+        delete filmes[req.body.id]
+        res.json({msg:"ok"})
     });
 
 }
